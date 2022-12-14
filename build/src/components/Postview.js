@@ -2,7 +2,7 @@ import dots from '../img/icons8-more-48.png'
 import heart from '../img/icons8-heart-67.png'
 import comment from '../img/icons8-telegram-app-50.png'
 import Header from "./Header"
-const API_KEY = process.env.API_KEY || "http://localhost:3000";
+const API_KEY = process.env.API_KEY_React
 
 
 const PostView = (props) =>{

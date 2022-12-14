@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header"
 import { useNavigate } from "react-router-dom";
 import "../add.css"
-const API_KEY = process.env.API_KEY || "http://localhost:3000";
+const API_KEY = process.env.API_KEY_React
 
 
 const Upload = () => {
