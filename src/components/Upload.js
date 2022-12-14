@@ -29,7 +29,7 @@ const Upload = () => {
                 .catch((err) => console.log(err))
                 .finally(() => {
                     event.target.reset();
-                    navigate("/login")
+                    navigate("/")
                     window.location.reload()
                 })
         } catch (err) {
