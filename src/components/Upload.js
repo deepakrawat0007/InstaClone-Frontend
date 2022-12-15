@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "./Header"
 import { useNavigate } from "react-router-dom";
-import "../add.css"
+import "../Upload.css"
 const API_KEY = process.env.REACT_APP_API || "http://localhost:3001"
 
 
 const Upload = () => {
-    const navigate = useNavigate();
+    const navigate = useNavigate("/");
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
@@ -30,7 +30,6 @@ const Upload = () => {
                 .finally(() => {
                     event.target.reset();
                     navigate("/login")
-                    window.location.reload()
                 })
         } catch (err) {
             console.log("ERROR:", err);

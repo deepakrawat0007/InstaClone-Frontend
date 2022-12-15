@@ -1,4 +1,4 @@
-import React, { useState , useEffect } from 'react';
+import React, { useState  } from 'react';
 import './App.css';
 import LandingPage from './components/Landing_page';
 import PostView from './components/Postview';
@@ -9,7 +9,7 @@ const API_KEY = process.env.REACT_APP_API || "http://localhost:3001"
 const App = ()=>{
   const [userData , setuserData] = useState([])
 
-  useEffect(()=>{
+
     fetch(API_KEY +"/post")
     .then((res)=>{
       return res.json()
@@ -20,7 +20,7 @@ const App = ()=>{
       console.log(err)
     })
  
-  },[])
+
  
 return(
     <>
